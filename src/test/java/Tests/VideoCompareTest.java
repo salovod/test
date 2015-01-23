@@ -21,8 +21,10 @@ public class VideoCompareTest extends BeforeClass {
     @Test
     public void compareTwoCards() throws InterruptedException {
         compare.addFilter();
-        compare.clickOnFirstCardToCompare();
-        compare.clickOnSecondCardToCompare();
-        compare.clickToCompare();
+//        compare.clickOnFirstCardToCompare();
+//        compare.clickOnSecondCardToCompare();
+//        compare.clickToCompare();
+        compare.selectElement();
+        Thread.sleep(5000);
     }
 }

@@ -1,9 +1,15 @@
 package Pages;
 
+import ch.lambdaj.function.convert.Converter;
+import net.thucydides.core.annotations.findby.By;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+import java.util.List;
+
+import static ch.lambdaj.Lambda.convert;
 
 public class ComparePage extends PageObject {
     private static final Integer CATALOG_WAIT_FOR_TIMEOUT = 20000;
@@ -38,5 +44,13 @@ public class ComparePage extends PageObject {
 
     public void setClickToCompare() {
         clickOn(clickToCompare);
+    }
+
+
+    public List<WebElement> selectThis(int number) {
+        WebElement definitionList = getDriver().findElement(By.name("goods_list"));
+        List<WebElement> results = definitionList.findElements(By.className("gtile-i-wrap"));
+        results.get(number).findElement(By.className("g-tools-to-compare-check")).click();
+        return results;
     }
 }

@@ -37,4 +37,9 @@ public class CompareSteps extends ScenarioSteps {
     public void clickToCompare() {
         comparePage.setClickToCompare();
     }
+
+    @Step
+    public void selectElement(int number) {
+        comparePage.selectThis(number);
+    }
 }
