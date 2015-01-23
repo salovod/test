@@ -39,7 +39,7 @@ public class CompareSteps extends ScenarioSteps {
     }
 
     @Step
-    public void selectElement(int number) {
-        comparePage.selectThis(number);
+    public void selectElement(int number) throws InterruptedException {
+        comparePage.clickToCompare(number);
     }
 }

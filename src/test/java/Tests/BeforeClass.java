@@ -17,7 +17,7 @@ import java.util.List;
  */
 public class BeforeClass {
 
-    @Managed(uniqueSession = true, driver = "firefox")
+    @Managed(uniqueSession = true, driver = "chrome")
     public WebDriver driver;
     @Steps
     public CompareSteps compare;

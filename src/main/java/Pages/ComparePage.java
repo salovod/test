@@ -47,10 +47,17 @@ public class ComparePage extends PageObject {
     }
 
 
-    public List<WebElement> selectThis(int number) {
+    public void clickToCompare(int number) throws InterruptedException {
+        List<WebElement> results = this.getListByClassName("gtile-i-wrap");
+        for (WebElement element : results) {
+            element.findElement(By.className("g-tools-to-compare-check")).click();
+            Thread.sleep(1000);
+        }
+    }
+
+    protected List<WebElement> getListByClassName(String className) {
         WebElement definitionList = getDriver().findElement(By.name("goods_list"));
-        List<WebElement> results = definitionList.findElements(By.className("gtile-i-wrap"));
-        results.get(number).findElement(By.className("g-tools-to-compare-check")).click();
+        List<WebElement> results = definitionList.findElements(By.className(className));
         return results;
     }
 }
