@@ -1,14 +1,14 @@
-package Utils;
+package utils;
 
 import net.thucydides.core.annotations.Feature;
 
 public class Application {
     @Feature
-    public class GHARebuild {
+    public class RozCompare {
         public class Booking {
         }
 
-        public class Register {
+        public class Compare {
         }
     }
 }

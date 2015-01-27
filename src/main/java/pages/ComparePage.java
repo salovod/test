@@ -1,6 +1,5 @@
-package Pages;
+package pages;
 
-import ch.lambdaj.function.convert.Converter;
 import net.thucydides.core.annotations.findby.By;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.WebDriver;
@@ -8,8 +7,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
-
-import static ch.lambdaj.Lambda.convert;
 
 public class ComparePage extends PageObject {
     private static final Integer CATALOG_WAIT_FOR_TIMEOUT = 20000;

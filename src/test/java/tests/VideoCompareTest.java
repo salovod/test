@@ -1,6 +1,6 @@
-package Tests;
+package tests;
 
-import Utils.Application;
+import utils.Application;
 import net.thucydides.core.annotations.ManagedPages;
 import net.thucydides.core.annotations.Story;
 import net.thucydides.core.annotations.WithTag;
@@ -10,7 +10,7 @@ import net.thucydides.junit.runners.ThucydidesRunner;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-@Story(Application.GHARebuild.Register.class)
+@Story(Application.RozCompare.Compare.class)
 @RunWith(ThucydidesRunner.class)
 @Concurrent(threads = "1")
 public class VideoCompareTest extends BeforeClass {

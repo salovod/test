@@ -1,16 +1,13 @@
-package Tests;
+package tests;
 
-import Steps.CompareSteps;
+import steps.CompareSteps;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
-import net.thucydides.core.annotations.findby.By;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 import java.io.IOException;
-import java.util.List;
 
 /**
  * Created by rb on 19.01.15.
