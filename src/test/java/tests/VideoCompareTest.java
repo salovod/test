@@ -25,6 +25,7 @@ public class VideoCompareTest extends BeforeClass {
 //        compare.clickOnSecondCardToCompare();
 //        compare.clickToCompare();
         compare.selectElement(1);
+        assertTitle();
         Thread.sleep(5000);
     }
 }

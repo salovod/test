@@ -1,9 +1,9 @@
 package steps;
 
-import pages.ComparePage;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.pages.Pages;
 import net.thucydides.core.steps.ScenarioSteps;
+import pages.ComparePage;
 
 public class CompareSteps extends ScenarioSteps {
     ComparePage comparePage;
@@ -41,5 +41,10 @@ public class CompareSteps extends ScenarioSteps {
     @Step
     public void selectElement(int number) throws InterruptedException {
         comparePage.clickToCompare(number);
+    }
+
+    @Step
+    public String getTitle() {
+        return comparePage.getTitle();
     }
 }
